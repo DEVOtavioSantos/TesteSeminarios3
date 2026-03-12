@@ -34,7 +34,7 @@ function DropDown({text, items}) {
                     <ul>
                         {items.map((item, index) => (
                             <li key={index}>
-                                <Link href={item.href}>{item.text}</Link>
+                                <Link to={item.href}>{item.text}</Link>
                             </li>
                         ))}
                     </ul>
