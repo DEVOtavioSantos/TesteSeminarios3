@@ -1,6 +1,6 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createHashRouter } from "react-router-dom";
 
-const Routes = createBrowserRouter([
+const Routes = createHashRouter([
     {
         path: "/",
         element: <h1>Teste</h1>

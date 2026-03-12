@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import NavBar from "./components/NavBar/NavBar"
+import NavBar from "./components/NavBar/NavBar.jsx"
 import './App.css'
-import { RouterProvider } from 'react-router-dom'
+import {HashRouter,RouterProvider } from 'react-router-dom'
 import Routes from './Routes.jsx'
 
 function App() {
