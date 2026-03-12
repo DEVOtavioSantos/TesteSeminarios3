@@ -1,7 +1,7 @@
 import "./NavBar.css"
 import DropDown from "./DropDown/DropDown"
 import { Link } from "react-router-dom";
-import { microsoftItems, Objetivo } from "./Conteudo";
+import {Objetivo } from "./Conteudo";
 function NavBar() {
 
    
