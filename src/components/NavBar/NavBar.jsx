@@ -7,7 +7,7 @@ function NavBar() {
    
 
     return (
-        <nav className="flex-row bg-white dark:bg-gray-800 flex  justify-around items-center p-10 border-solid border-b-2 border-black shadow-x1 ">
+        <nav className="flex-row bg-white dark:bg-gray-800 flex  justify-around items-center p-10 border-solid border-b-2 border-black shadow-x1 flex-wrap">
             <>
                 <Link to="/" className="text-8x1 text-gray-800 dark:text-white text-8x1" >Logo</Link>
                 <div className="flex items-center relative inline-blcok gap-4 ">
