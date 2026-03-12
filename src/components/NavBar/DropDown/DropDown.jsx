@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react"
 import { Link } from "react-router-dom";
-import './DropDown.css'
+
 function DropDown({text, items}) {
     const [aberto, setAberto] = useState(false)
     const dropDownRef = useRef(null)
