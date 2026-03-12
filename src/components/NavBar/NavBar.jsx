@@ -1,7 +1,7 @@
 import "./NavBar.css"
 import DropDown from "./DropDown/DropDown"
 import { Link } from "react-router-dom";
-import { microsoftItems, quemSomosItems } from "./Conteudo";
+import { microsoftItems, Objetivo } from "./Conteudo";
 function NavBar() {
 
    
@@ -11,8 +11,8 @@ function NavBar() {
             <>
                 <Link to="/" className="text-8x1 text-gray-800 dark:text-white text-8x1" >Logo</Link>
                 <div className="flex items-center relative inline-blcok gap-4 ">
-                    <DropDown text="Quem Somos" items={quemSomosItems}/>
-                    <DropDown text="Microsoft" items={microsoftItems}/>
+                    <DropDown text="Objetivo" items={Objetivo}/>
+                    
                 </div>
             </>
         </nav>

@@ -1,6 +1,8 @@
 import { createHashRouter } from "react-router-dom"
 import Layout from "./Layout"
 import HomePage from "./pages/HomePage"
+import Ideia_Page from "./pages/ideia"
+import Autismo from "./pages/Autismo"
 
 const router = createHashRouter([
   {
@@ -12,8 +14,12 @@ const router = createHashRouter([
         element: <HomePage/>
       },
       {
-        path: "/sobre",
-        element: <h1>Hello World</h1>
+        path: "/Ideia",
+        element: <Ideia_Page/>
+      },
+      {
+        path: "/autismo",
+        element: <Autismo/>
       }
     ]
   }
