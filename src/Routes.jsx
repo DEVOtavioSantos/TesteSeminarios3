@@ -9,6 +9,6 @@ const Routes = createHashRouter([
         path: "/sobre",
         element: <h1>Hello World</h1>
     },
-])
+],  {basename:  "/TesteSeminarios3/"})
 
 export default Routes
