@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react"
+import { Link } from "react-router-dom";
 
 function DropDown({text, items}) {
     const [aberto, setAberto] = useState(false)
@@ -33,7 +34,7 @@ function DropDown({text, items}) {
                     <ul>
                         {items.map((item, index) => (
                             <li key={index}>
-                                <a href={item.href}>{item.text}</a>
+                                <Link href={item.href}>{item.text}</Link>
                             </li>
                         ))}
                     </ul>
