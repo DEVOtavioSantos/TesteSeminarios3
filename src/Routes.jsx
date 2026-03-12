@@ -1,7 +1,7 @@
-import { createHashRouter } from "react-router-dom"
+import { createHashRouter, Routes } from "react-router-dom"
 import Layout from "./Layout"
 
-const router = createHashRouter([
+const Routes = createHashRouter([
   {
     path: "/",
     element: <Layout />,
@@ -18,4 +18,4 @@ const router = createHashRouter([
   }
 ])
 
-export default router
+export default Routes
