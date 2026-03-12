@@ -3,7 +3,7 @@ import DropDown from "./DropDown/DropDown"
 function NavBar() {
 
     const menuItems = [
-    { text: 'Perfil', href: '/sobre' },
+    { text: 'Perfil', href: 'TesteSeminarios3/sobre' },
     { text: 'Configurações', href: '/config' },
     { text: 'Sair', href: '/logout' },
   ];
