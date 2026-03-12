@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react"
 import { Link } from "react-router-dom";
-
+import './DropDown.css'
 function DropDown({text, items}) {
     const [aberto, setAberto] = useState(false)
     const dropDownRef = useRef(null)
@@ -25,19 +25,22 @@ function DropDown({text, items}) {
 
     return (
         <>
-            <div>
-                <button onClick={ApertarDropDown}>
+            <div className="relative">
+                <button className="text-gray-900 dark:text-white flex items-center gap-1" onClick={ApertarDropDown}>
                     {text}
-                    <span>▼</span>
+                    <span>{aberto ? "▲" : "▼"}</span>
                 </button>
                 {aberto && (
-                    <ul>
-                        {items.map((item, index) => (
-                            <li key={index}>
-                                <Link to={item.href}>{item.text}</Link>
-                            </li>
-                        ))}
-                    </ul>
+                    <div className="absolute top-full left-0 mt-2 bg-white dark:bg-gray-800 shadow-lg rounded-lg z-50 min-w-[100px]">
+                        <ul className="py-2">
+                            {items.map((item, index) => (
+                                <li key={index}>
+                                    <Link className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white duration-1000" to={item.href}>{item.text}</Link>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                    
                 )}
             </div>
         </>

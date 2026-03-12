@@ -1,20 +1,18 @@
 import "./NavBar.css"
 import DropDown from "./DropDown/DropDown"
+import { Link } from "react-router-dom";
+import { microsoftItems, quemSomosItems } from "./Conteudo";
 function NavBar() {
 
-    const menuItems = [
-    { text: 'Perfil', href: '/sobre' },
-    { text: 'Configurações', href: '/config' },
-    { text: 'Sair', href: '/logout' },
-  ];
+   
 
     return (
-        <nav className="Container">
+        <nav className="flex-row bg-white dark:bg-gray-800 flex  justify-around items-center p-10 border-solid border-b-2 border-black shadow-x1 ">
             <>
-                <h1 className="Logo">Logo</h1>
-                <div className="Colection-DropDown">
-                    <DropDown text="Quem Somos" />
-                    <DropDown text="Microsoft" items={menuItems}/>
+                <Link to="/" className="text-8x1 text-gray-800 dark:text-white text-8x1" >Logo</Link>
+                <div className="flex items-center relative inline-blcok gap-4 ">
+                    <DropDown text="Quem Somos" items={quemSomosItems}/>
+                    <DropDown text="Microsoft" items={microsoftItems}/>
                 </div>
             </>
         </nav>
